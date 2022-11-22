@@ -1,0 +1,16 @@
+<div class="container text-center p-4 border border-3 border-dark mt-5 w-25">
+  <h2 class="text-dark border-4 ">login Form</h2>
+  <h6>{{aim}}</h6>
+  <br><br>
+  <form action="">
+      <div class="mb-3">
+        <input (change)="acnoChange($event)" type="text" class="form-control" id="Login_acno" [placeholder]="account">
+      </div>
+      <div class="mb-3">
+        <input (change)="pswdChange($event)" type="password" class="form-control" id="Login_pswd" placeholder="password">
+      </div>
+     <button type="button" class="btn btn-outline-dark" (click)="loginFn()">Login</button><br><br>
+     <a href="#">Forget password?</a> OR <a href="./signup.html">SignUp</a>
+    </form>
+</div>
+

@@ -1,0 +1,42 @@
+Basic Building Blocks
+ 1. modulev- To Import 3rd party modules(root modules).
+ 2. Component - To create html,cssand ts file.
+
+
+Basic Commands
+ 1. ng new project_name -(To create a new project).
+ 2. ng g c Component_name -(To create a new Component).
+ 3. ng serve --open -(To run Angular file).
+
+
+A)Basic concept
+
+ts --> component
+html-->view
+
+
+1. Data Binding
+      * Share data between components.
+      i.one way data binding.(One-direction).
+          * ts-->html or html-->ts.
+
+            a. component to view.
+              1. string interpolation.
+                 SYNTAX:
+                   {{Expression}}
+              2. property binding
+                  SYNTAX:
+                    [atrribute name]="property"
+
+            b. View to component
+              2. Event binding
+                SYNTAX:
+                (event_name)="function_name"
+
+              2.1) Event Binding using $event
+                SYNTAX:
+                (event_name)="function_name($event)"
+
+
+     ii.two way data binding.(Two-direction).
+
