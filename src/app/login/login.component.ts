@@ -43,25 +43,25 @@ userDetails:any={
 
 
   //$event binding
-  acnoChange(event:any)
-  {
-    this.acno = event.target.value;
-    console.log(this.acno);
+  // acnoChange(event:any)
+  // {
+  //   this.acno = event.target.value;
+  //   console.log(this.acno);
 
-  }
+  // }
 
-  pswdChange(event:any)
-  {
-    this.pswd=event.target.value;
-    console.log(this.pswd);
+  // pswdChange(event:any)
+  // {
+  //   this.pswd=event.target.value;
+  //   console.log(this.pswd);
 
-  }
+  // }
 
  //event binding
- loginFn(){
+ loginFn(a:any,p:any){
   // alert("Login Clicked")
-var acno=this.acno;
-var pswd =this.pswd;
+var acno=a.value;
+var pswd =p.value;
 var userDetails=this.userDetails;
 
 if(acno in userDetails)
